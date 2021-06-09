@@ -1,15 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import {NavBar} from './components/NavBar/navBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Argentina al Mundo!
-        </p>
-      </header>
+      <NavBar/>
+      <h1>Argentina al mundo!</h1>
     </div>
   );
 }

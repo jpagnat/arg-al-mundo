@@ -1,0 +1,18 @@
+.navBar {
+    background-color: #f0ec57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .navBarItem {
+        text-decoration: none;
+        margin: 20px;
+        color: #0b0a07;
+    }
+    .navBarItem:hover {
+        border-bottom: 2px solid #0b0a07;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
