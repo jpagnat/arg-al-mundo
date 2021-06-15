@@ -8,7 +8,7 @@ function App() {
       <NavBar/>
       <h1>Argentina al mundo!</h1>
 
-      <ItemListContainer />
+      <ItemListContainer prop="Aqui se mostraran los productos!" />
     </div>
   );
 }

@@ -1,7 +1,11 @@
 import "./itemListContainer.scss";
 
-export const ItemListContainer = () => {
+export const ItemListContainer = ({ prop }) => {
   return (
-    <span>Aqui se mostrara el listado de productos!</span>
+    <div>
+      <p>
+        {prop}
+      </p>
+    </div>
   );
 };
