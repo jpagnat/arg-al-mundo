@@ -5,10 +5,10 @@ import { ItemListContainer } from './components/ItemListContainer/itemListContai
 function App() {
   return (
     <div className="App">
-      <NavBar/>
+      <NavBar />
       <h1>Argentina al mundo!</h1>
 
-      <ItemListContainer prop="Aqui se mostraran los productos!" />
+      <ItemListContainer title="Aqui se mostraran los productos!" />
     </div>
   );
 }

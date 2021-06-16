@@ -1,11 +1,15 @@
-import "./itemListContainer.scss";
+import React from 'react'
+import "./itemListContainer.scss"
+import { ItemCount } from "../ItemCount/itemCount"
 
-export const ItemListContainer = ({ prop }) => {
+export const ItemListContainer = (props) => {
   return (
     <div>
       <p>
-        {prop}
+        {props.title}
       </p>
+      <ItemCount stock="10" initial="1" onAdd="" />
     </div>
+
   );
 };

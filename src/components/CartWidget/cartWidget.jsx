@@ -1,4 +1,5 @@
-import "./cartWidget.scss";
+import React from 'react'
+import "./cartWidget.scss"
 
 export const CartWidget = () => {
   return (

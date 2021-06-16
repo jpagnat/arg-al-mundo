@@ -1,3 +1,4 @@
+import React from 'react'
 import "./navBar.scss";
 import { CartWidget } from "../CartWidget/cartWidget";
 
