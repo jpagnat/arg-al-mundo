@@ -1,33 +1,9 @@
-.productContainer {
-    border: 2px solid red;
-    width: 20rem;
-    height: 20rem;
-    margin: 30px;
-
-    .btnContainer {
-        span{
-            margin: 20px;
-            font-size: 40px;
-        }
-        button {
-            width: 60px;
-            color: #000;
-            font-size: 30px;
-            padding: 12px 0;
-            background-color: #f0ec57;
-            border-radius: 20px;
-        }
-    }
-
-    .addProduct {
-        width: 180px;
-        color: #000;
-        font-size: 30px;
-        padding: 12px 0;
-        background-color: #f0ec57;
-        border-radius: 20px;
-        margin-top: 10px;
+.btnContainer {
+    button {
+        font-size: 20px;
+        padding: 5px;
+        margin: 0 10px 10px 10px;
+        border-radius: 50%;
+        border-color: #000;
     }
 }
-
-

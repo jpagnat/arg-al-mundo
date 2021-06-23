@@ -8,7 +8,7 @@ function App() {
       <NavBar />
       <h1>Argentina al mundo!</h1>
 
-      <ItemListContainer title="Aqui se mostraran los productos!" />
+      <ItemListContainer />
     </div>
   );
 }
