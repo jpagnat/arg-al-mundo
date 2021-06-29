@@ -1,18 +1,30 @@
 import './Home.scss'
 import { NavBar } from '../../components/NavBar/navBar'
-import { ItemListContainer } from '../../components/ItemListContainer/itemListContainer'
+import { ItemListContainer } from '..//ItemListContainer/itemListContainer'
+import { ItemDetailContainer } from '../ItemDetailContainer/ItemDetailContainer'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
-function Home() {
+export const Home = () => {
+
+
   return (
-    <div className="App">
+
+    <Router>
       <NavBar />
-      <h1>Argentina al mundo!</h1>
+      <Switch>
+        <Route exact path="/">
+          <ItemListContainer />
+        </Route>
+        <Route path='/category/:id'>
+          <ItemListContainer />
+        </Route>
+        <Route path="/item/:id">
+          <ItemDetailContainer />
+        </Route>
+      </Switch>
+    </Router>
 
-      <ItemListContainer />
-
-    </div>
   );
 }
 
-export default Home;
