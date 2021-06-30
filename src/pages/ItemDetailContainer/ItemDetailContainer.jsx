@@ -9,20 +9,14 @@ export const ItemDetailContainer = () => {
     const { id } = useParams()
     const [item, setItem] = useState()
 
-
-
     useEffect(() => {
         const mostrarItem = () => {
-
-            const prod = productos.find(item => item.id === id)
-
-            setItem(prod)
-
+            return productos.find((item) => item.id === id)
         }
 
         const item = mostrarItem()
         setItem(item)
-
+        console.log(item)
     }, [id])
 
 

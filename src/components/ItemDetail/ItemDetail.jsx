@@ -4,11 +4,21 @@ import './ItemDetail.scss'
 
 export const ItemDetail = ({ item }) => {
 
-
+    console.log(item)
 
     return (
-        <div >
-            <p>Aca se mostrara el detalle del producto seleccionado</p>
-        </div>
+        <div>Hola</div>
     )
+
+    /*const { id, title, price, pictureUrl, categoryId } = item
+
+    return (
+
+        <div className="item">
+            <img className="imgItem" src={item.pictureUrl} alt="" />
+            <h3 className="titleItem">{item.title}</h3>
+            <p className="priceItem">{item.price}</p>
+        </div>
+
+    )*/
 }
