@@ -2,13 +2,16 @@ import React from 'react'
 import "./navBar.scss";
 import { CartWidget } from "../CartWidget/cartWidget";
 import { Link, NavLink } from 'react-router-dom';
+import logo from '../../img/logo.png'
 
 export const NavBar = () => {
 
   return (
     <div className="navBar">
 
-      <Link to='/'><p>Logo</p></Link>
+      <Link to='/'>
+        <img className='logo' src={logo} alt="" />
+      </Link>
 
 
       <ul>
@@ -26,7 +29,7 @@ export const NavBar = () => {
 
       </ul>
 
-      <div>
+      <div className='cart'>
         <CartWidget />
       </div>
     </div >

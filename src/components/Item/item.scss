@@ -1,7 +1,16 @@
+.link {
+    text-decoration: none;
+}
+.item{
+    margin: 0 8px 4px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 .imgItem {
         width: 15rem;
         height: 15em;
-        margin: 0 auto;
 }
 .titleItem{
     font-size: 1.5rem;
@@ -10,4 +19,5 @@
     font-size: 1rem;
     font-weight: bold;
     margin-top:-10px;
+}
 }

@@ -16,7 +16,7 @@ export const Home = () => {
         <Route exact path="/">
           <ItemListContainer />
         </Route>
-        <Route path='/category/:id'>
+        <Route exact path='/categories/:id'>
           <ItemListContainer />
         </Route>
         <Route path="/item/:id">

@@ -5,11 +5,19 @@
     align-items: center;
     .navBarItem {
         display: inline-block;
-        margin: 20px;
+        margin: 0 10px;
         color: #0b0a07;
         border-bottom: 2px solid transparent;
+        font-size: 25px;
     }
     .navBarItem:hover {
         border-bottom: 2px solid #0b0a07;
+    }
+    .logo {
+        width: 5em;
+        height: 5em;
+    }
+    .cart {
+        margin-right: 30px;
     }
 }

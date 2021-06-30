@@ -4,11 +4,11 @@ import './ItemDetail.scss'
 
 export const ItemDetail = ({ item }) => {
 
+
+
     return (
         <div >
-            {item.pictureUrl}
-            <h3>{item.title}</h3>
-            <p>{item.price}</p>
+            <p>Aca se mostrara el detalle del producto seleccionado</p>
         </div>
     )
 }

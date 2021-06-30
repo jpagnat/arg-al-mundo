@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "pictureUrl": "https://cdn.shopify.com/s/files/1/0463/3395/2158/products/yerba-mate-amanda-1-kg_1024x1024@2x.jpg?v=1606466159",
+        "title": "Yerba Amanda",
+        "price": "$300",
+        "categoryId": "Salado"
+    },
+    {
+        "id": 2,
+        "pictureUrl": "https://o.remove.bg/downloads/3dfaadde-1262-49f5-8be0-ac140d093864/Yerba-Hierbas-Serranas-Cbse-1kg-1-14368-removebg-preview.png",
+        "title": "Yerba CBSé",
+        "price": "$320",
+        "categoryId": "Salado"
+    },
+    {
+        "id": 3,
+        "pictureUrl": "https://cdn.shopify.com/s/files/1/0463/3395/2158/products/aLFA2_1024x1024@2x.png?v=1606219714",
+        "title": "Alfajores Havanna x12",
+        "price": "$1500",
+        "categoryId": "Dulce"
+    },
+    {
+        "id": 4,
+        "pictureUrl": "https://d2r9epyceweg5n.cloudfront.net/stores/001/229/828/products/caja-alfajores-mix1-26c31f88493463abde15936973339842-640-0.png",
+        "title": "Alfajores Havanna x6",
+        "price": "$800",
+        "categoryId": "Dulce"
+    },
+    {
+        "id": 5,
+        "pictureUrl": "https://o.remove.bg/downloads/5c042711-4113-497c-aebb-d2a096d77f19/14463-f11-d2186e7fdd3a81f1f315879959258138-480-01-eb9f3e6bcd9fc0b74615949401636620-640-0-removebg-preview.png",
+        "title": "Cerveza Quilmes x6",
+        "price": "$300",
+        "categoryId": "Bebida"
+    },
+    {
+        "id": 6,
+        "pictureUrl": "https://www.brancastore.com.ar/269-large_default/fernet-branca-botella-edicion-175-aniversario-750ml.jpg",
+        "title": "Fernet Branca 750ml",
+        "price": "$800",
+        "categoryId": "Bebida"
+    }
+
+
+
+    
+]
