@@ -16,13 +16,16 @@ export const ItemDetailContainer = () => {
 
         const item = mostrarItem()
         setItem(item)
-        console.log(item)
+
     }, [id])
 
 
     return (
         <div>
-            <ItemDetail item={item} />
+            {item === undefined ? (<p>Cargando..</p>) :
+                <ItemDetail item={item} />
+            }
+
         </div>
 
 

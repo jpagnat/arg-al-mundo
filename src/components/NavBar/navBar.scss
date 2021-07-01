@@ -1,5 +1,5 @@
 .navBar {
-    background-color: #f0ec57;
+    background-color: #6AC9FF;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,6 +12,7 @@
     }
     .navBarItem:hover {
         border-bottom: 2px solid #0b0a07;
+        color:#fff;
     }
     .logo {
         width: 5em;

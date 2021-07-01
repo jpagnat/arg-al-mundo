@@ -16,15 +16,15 @@ export const NavBar = () => {
 
       <ul>
         <NavLink to='/categories/Dulce'>
-          <li className="navBarItem" href=" ">Dulce</li>
+          <li className="navBarItem" href=" ">Dulces</li>
         </NavLink>
 
         <NavLink to='/categories/Salado' >
-          <li className="navBarItem" href=" ">Salado</li>
+          <li className="navBarItem" href=" ">Salados</li>
         </NavLink>
 
         <NavLink to='/categories/Bebida' >
-          <li className="navBarItem" href=" ">Bebida</li>
+          <li className="navBarItem" href=" ">Bebidas</li>
         </NavLink>
 
       </ul>

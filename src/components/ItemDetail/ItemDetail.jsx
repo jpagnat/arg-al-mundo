@@ -1,24 +1,27 @@
 import React from 'react'
 import './ItemDetail.scss'
+import { ItemCount } from '../ItemCount/itemCount'
 
 
 export const ItemDetail = ({ item }) => {
 
-    console.log(item)
 
     return (
-        <div>Hola</div>
+        <div>
+            <div className="item-detail-container">
+                <img className="item-detail-img" src={item.pictureUrl} alt="" />
+                <div className="item-detail-description">
+                    <h3 className="item-detail-title">{item.title}</h3>
+                    <p className="item-detail-price">{item.price}</p>
+                    <div className="item-detail-count">
+                        <ItemCount />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     )
 
-    /*const { id, title, price, pictureUrl, categoryId } = item
 
-    return (
-
-        <div className="item">
-            <img className="imgItem" src={item.pictureUrl} alt="" />
-            <h3 className="titleItem">{item.title}</h3>
-            <p className="priceItem">{item.price}</p>
-        </div>
-
-    )*/
 }
