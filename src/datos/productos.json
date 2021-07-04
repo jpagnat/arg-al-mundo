@@ -4,105 +4,120 @@
         "pictureUrl": "https://d2r9epyceweg5n.cloudfront.net/stores/001/229/828/products/caja-alfajores-mix1-26c31f88493463abde15936973339842-640-0.png",
         "title": "Yerba Amanda",
         "price": "$300",
-        "categoryId": "Salado"
+        "categoryId": "Salado",
+        "stock":"10"
     },
     {
         "id": "2",
         "pictureUrl": "https://d2r9epyceweg5n.cloudfront.net/stores/001/229/828/products/caja-alfajores-mix1-26c31f88493463abde15936973339842-640-0.png",
         "title": "Yerba CBSé",
         "price": "$320",
-        "categoryId": "Salado"
+        "categoryId": "Salado",
+        "stock":"10"
     },
     {
         "id": "3",
         "pictureUrl": "https://d2r9epyceweg5n.cloudfront.net/stores/001/229/828/products/caja-alfajores-mix1-26c31f88493463abde15936973339842-640-0.png",
         "title": "Alfajores Havanna x12",
         "price": "$1500",
-        "categoryId": "Salado"
+        "categoryId": "Salado",
+        "stock":"10"
     },
     {
         "id": "4",
         "pictureUrl": "https://d2r9epyceweg5n.cloudfront.net/stores/001/229/828/products/caja-alfajores-mix1-26c31f88493463abde15936973339842-640-0.png",
         "title": "Alfajores Havanna x6",
         "price": "$800",
-        "categoryId": "Salado"
+        "categoryId": "Salado",
+        "stock":"10"
     },
     {
         "id": "5",
         "pictureUrl": "https://d2r9epyceweg5n.cloudfront.net/stores/001/229/828/products/caja-alfajores-mix1-26c31f88493463abde15936973339842-640-0.png",
         "title": "Cerveza Quilmes x6",
         "price": "$300",
-        "categoryId": "Bebida"
+        "categoryId": "Bebida",
+        "stock":"10"
     },
     {
         "id": "6",
         "pictureUrl": "https://d2r9epyceweg5n.cloudfront.net/stores/001/229/828/products/caja-alfajores-mix1-26c31f88493463abde15936973339842-640-0.png",
         "title": "Cerveza Quilmes x6",
         "price": "$300",
-        "categoryId": "Bebida"
+        "categoryId": "Bebida",
+        "stock":"10"
     },
     {
         "id": "7",
         "pictureUrl": "https://d2r9epyceweg5n.cloudfront.net/stores/001/229/828/products/caja-alfajores-mix1-26c31f88493463abde15936973339842-640-0.png",
         "title": "Cerveza Quilmes x6",
         "price": "$300",
-        "categoryId": "Bebida"
+        "categoryId": "Bebida",
+        "stock":"10"
     },
     {
         "id": "8",
         "pictureUrl": "https://d2r9epyceweg5n.cloudfront.net/stores/001/229/828/products/caja-alfajores-mix1-26c31f88493463abde15936973339842-640-0.png",
         "title": "Cerveza Quilmes x6",
         "price": "$300",
-        "categoryId": "Bebida"
+        "categoryId": "Bebida",
+        "stock":"10"
     },
     {
         "id": "9",
         "pictureUrl": "https://d2r9epyceweg5n.cloudfront.net/stores/001/229/828/products/caja-alfajores-mix1-26c31f88493463abde15936973339842-640-0.png",
         "title": "Cerveza Quilmes x6",
         "price": "$300",
-        "categoryId": "Dulce"
+        "categoryId": "Dulce",
+        "stock":"10"
     },
     {
         "id": "10",
         "pictureUrl": "https://d2r9epyceweg5n.cloudfront.net/stores/001/229/828/products/caja-alfajores-mix1-26c31f88493463abde15936973339842-640-0.png",
         "title": "Cerveza Quilmes x6",
         "price": "$300",
-        "categoryId": "Dulce"
+        "categoryId": "Dulce",
+        "stock":"10"
     },
     {
         "id": "11",
         "pictureUrl": "https://d2r9epyceweg5n.cloudfront.net/stores/001/229/828/products/caja-alfajores-mix1-26c31f88493463abde15936973339842-640-0.png",
         "title": "Cerveza Quilmes x6",
         "price": "$300",
-        "categoryId": "Dulce"
+        "categoryId": "Dulce",
+        "stock":"10"
     },
     {
         "id": "12",
         "pictureUrl": "https://d2r9epyceweg5n.cloudfront.net/stores/001/229/828/products/caja-alfajores-mix1-26c31f88493463abde15936973339842-640-0.png",
         "title": "Fernet Branca 750ml",
         "price": "$800",
-        "categoryId": "Dulce"
+        "categoryId": "Dulce",
+        "stock":"10"
     },
     {
         "id": "13",
         "pictureUrl": "https://d2r9epyceweg5n.cloudfront.net/stores/001/229/828/products/caja-alfajores-mix1-26c31f88493463abde15936973339842-640-0.png",
         "title": "Cerveza Quilmes x6",
         "price": "$300",
-        "categoryId": "Dulce"
+        "categoryId": "Dulce",
+        "stock":"10"
     },
     {
         "id": "14",
         "pictureUrl": "https://d2r9epyceweg5n.cloudfront.net/stores/001/229/828/products/caja-alfajores-mix1-26c31f88493463abde15936973339842-640-0.png",
         "title": "Cerveza Quilmes x6",
         "price": "$300",
-        "categoryId": "Bebida"
+        "categoryId": "Bebida",
+        "stock":"10"
     },
     {
         "id": "15",
         "pictureUrl": "https://d2r9epyceweg5n.cloudfront.net/stores/001/229/828/products/caja-alfajores-mix1-26c31f88493463abde15936973339842-640-0.png",
         "title": "Cerveza Quilmes x6",
         "price": "$300",
-        "categoryId": "Salado"
+        "categoryId": "Salado",
+        "stock":"10"
     }
 
 
