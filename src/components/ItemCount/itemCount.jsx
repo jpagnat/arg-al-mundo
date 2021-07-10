@@ -2,14 +2,35 @@ import React, { useState, Fragment } from "react";
 import { Link } from "react-router-dom";
 import "./itemCount.scss";
 
-export const ItemCount = ({
-  onAdd,
-  disminuirCantidad,
-  aumentarCantidad,
-  itemCount,
-  state,
-  isInCart,
-}) => {
+export const ItemCount = ({ onAdd, state, isInCart, stockItem }) => {
+  const [itemCount, setItemCount] = useState(1);
+  const [stock, setStock] = useState(stockItem);
+
+  //Disminuir cantidad de productos
+  const disminuirCantidad = () => {
+    if (itemCount > 1) {
+      setItemCount(Number(itemCount) - 1);
+      setStock(Number(stock) + 1);
+    } else {
+      alert("Acción invalida");
+    }
+  };
+
+  //Aumentar cantidad de productos
+  const aumentarCantidad = () => {
+    if (stock > 1) {
+      setItemCount(Number(itemCount) + 1);
+      setStock(Number(stock) - 1);
+    } else {
+      alert("No hay mas stock");
+    }
+  };
+
+  //Enviar cantidad a onAdd
+  const handleClick = () => {
+    onAdd(itemCount);
+  };
+
   return (
     <Fragment>
       <div
@@ -23,10 +44,11 @@ export const ItemCount = ({
         <button className="btnCount" onClick={aumentarCantidad}>
           +
         </button>
-        <button onClick={onAdd} className="addCart">
+        <button onClick={handleClick} className="addCart">
           Agregar
         </button>
       </div>
+
       <Link to="/cart">
         <button
           style={{ display: state ? "block" : "none" }}
