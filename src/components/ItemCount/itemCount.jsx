@@ -37,19 +37,21 @@ export const ItemCount = ({ onAdd, state, isInCart, stockItem }) => {
         style={{ display: state ? "none" : "block" }}
         className="btnContainer"
       >
-        <button className="btnCount" onClick={disminuirCantidad}>
-          -
-        </button>
-        <span>{itemCount}</span>
-        <button className="btnCount" onClick={aumentarCantidad}>
-          +
-        </button>
+        <div>
+          <button className="btnCount" onClick={disminuirCantidad}>
+            -
+          </button>
+          <span>{itemCount}</span>
+          <button className="btnCount" onClick={aumentarCantidad}>
+            +
+          </button>
+        </div>
         <button onClick={handleClick} className="addCart">
           Agregar
         </button>
       </div>
 
-      <Link to="/cart">
+      <Link className="link-button" to="/cart">
         <button
           style={{ display: state ? "block" : "none" }}
           className="btnFinalizarCompra"

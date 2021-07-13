@@ -1,11 +1,17 @@
-import React from 'react'
-import "./cartWidget.scss"
+import React, { useContext, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./cartWidget.scss";
+import { CartContext } from "../../context/cartContext";
 
 export const CartWidget = () => {
-  return (
+  const { countCart } = useContext(CartContext);
 
-    <div className="cartWidgetContainer">
-      <i className="fas fa-shopping-cart cartWidget"></i>
-    </div>
+  return (
+    <Link to="/cart" className="link-cart">
+      <div className="cartWidgetContainer">
+        <i className={"fas fa-shopping-cart cartWidgetOn"}></i>
+        <span>{countCart}</span>
+      </div>
+    </Link>
   );
 };

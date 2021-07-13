@@ -1,8 +1,10 @@
 .navBar {
-    background-color: #6AC9FF;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+
     .navBarItem {
         display: inline-block;
         margin: 0 10px;
@@ -10,14 +12,17 @@
         border-bottom: 2px solid transparent;
         font-size: 25px;
     }
+
     .navBarItem:hover {
         border-bottom: 2px solid #0b0a07;
-        color:#fff;
+
     }
+
     .logo {
         width: 5em;
         height: 5em;
     }
+
     .cart {
         margin-right: 30px;
     }

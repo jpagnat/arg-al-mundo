@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
-import "./ItemDetail.scss";
+import "./itemDetail.scss";
 import { ItemCount } from "../ItemCount/itemCount";
-import { CartContext } from "../../context/CartContext";
+import { CartContext } from "../../context/cartContext";
 
 export const ItemDetail = ({ item }) => {
   const [state, setState] = useState(false);
