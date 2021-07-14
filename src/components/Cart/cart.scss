@@ -42,6 +42,45 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    .total-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        h2 {
+            align-self: flex-start;
+            margin-right: 2rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+
+    .total-buttons {
+
+        button {
+            font-size: 1.5rem;
+            border: none;
+            margin-top: 2rem;
+            padding: 8px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .link-finalizar-compra {
+            text-decoration: none;
+            font-size: 2rem;
+            color: #000;
+            border: none;
+            margin-top: 1rem;
+            padding: 8px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+    }
 }
 
 .no-products {
