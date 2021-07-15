@@ -2,20 +2,35 @@ import React, { useEffect, useState } from "react";
 import "./itemDetailContainer.scss";
 import { ItemDetail } from "../../components/ItemDetail/itemDetail";
 import { useParams } from "react-router-dom";
-import productos from "../../datos/productos.json";
+import { getFireStore } from "../../firebase/firebase";
 
 export const ItemDetailContainer = () => {
   const { id } = useParams();
   const [item, setItem] = useState();
+  const [loading, setLoading] = useState();
 
   useEffect(() => {
-    const mostrarItem = () => {
-      return productos.find((item) => item.id === id);
-    };
+    setLoading(true);
+    const db = getFireStore();
+    const itemCollection = db.collection("items");
+    const item = itemCollection.doc(id);
 
-    const item = mostrarItem();
-    setItem(item);
-  }, [id]);
+    item
+      .get()
+      .then((doc) => {
+        if (!doc.exists) {
+          console.log("No existe el item");
+          return;
+        }
+        setItem([{ id: doc.id, ...doc.data() }]);
+      })
+      .catch((error) => {
+        console.log("Error:", error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
 
   return (
     <div>
