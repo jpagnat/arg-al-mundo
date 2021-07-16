@@ -21,9 +21,7 @@ export const CartProvider = ({ children }) => {
 
   //Remueve un item del carrito utilizando su id
   const removeItem = (itemId) => {
-    setCart(
-      cart.filter((product) => parseInt(product.item.id) !== parseInt(itemId))
-    );
+    setCart(cart.filter((product) => product.item.id !== itemId));
     console.log("Se ha eliminado: ", cart.item);
   };
 

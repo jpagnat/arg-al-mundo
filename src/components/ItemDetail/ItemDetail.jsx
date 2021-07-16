@@ -7,11 +7,11 @@ export const ItemDetail = ({ item }) => {
   const [state, setState] = useState(false);
 
   const { addItem } = useContext(CartContext);
-  const { pictureUrl, title, price } = { item };
+  const { pictureUrl, title, price, stock } = item[0];
 
   const onAdd = (itemCount) => {
     setState(true);
-    const itemInfo = item;
+    const itemInfo = item[0];
     const quantity = itemCount;
     addItem(itemInfo, quantity);
   };
@@ -24,7 +24,7 @@ export const ItemDetail = ({ item }) => {
           <h3 className="item-detail-title">{title}</h3>
           <p className="item-detail-price">{price}</p>
           <div className="item-detail-count">
-            <ItemCount onAdd={onAdd} state={state} stockItem={item.stock} />
+            <ItemCount onAdd={onAdd} state={state} stockItem={stock} />
           </div>
         </div>
       </div>
