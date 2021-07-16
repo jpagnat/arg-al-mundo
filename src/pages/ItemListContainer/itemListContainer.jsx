@@ -22,7 +22,9 @@ export const ItemListContainer = () => {
         if (querySnapshot.size === 0) {
           console.log("No results!");
         }
-        setItems(querySnapshot.docs.map((doc) => doc.data()));
+        setItems(
+          querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
+        );
       })
       .catch((error) => {
         console.log("Error");

@@ -12,8 +12,9 @@ export const ItemDetailContainer = () => {
   useEffect(() => {
     setLoading(true);
     const db = getFireStore();
-    const itemCollection = db.collection("items");
-    const item = itemCollection.doc(id);
+    const itemCollection = db.collection("products");
+    const productid = id;
+    const item = itemCollection.doc(productid);
 
     item
       .get()
@@ -25,12 +26,12 @@ export const ItemDetailContainer = () => {
         setItem([{ id: doc.id, ...doc.data() }]);
       })
       .catch((error) => {
-        console.log("Error:", error);
+        console.log("error", error);
       })
       .finally(() => {
         setLoading(false);
       });
-  }, []);
+  }, [id]);
 
   return (
     <div>
