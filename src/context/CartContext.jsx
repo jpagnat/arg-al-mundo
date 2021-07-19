@@ -6,6 +6,10 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [countCart, setCountCart] = useState();
   const [totalPrice, setTotalPrice] = useState();
+  const [buyer, setBuyer] = useState();
+  const [idDelPedido, setIdDelPedido] = useState();
+
+  const order = { buyer, cart, countCart, totalPrice };
 
   //Agregar cierta cantidad de un item al carrito
   const addItem = (item, quantity) => {
@@ -80,6 +84,10 @@ export const CartProvider = ({ children }) => {
         contadorCarrito,
         clearCart,
         totalPrice,
+        setBuyer,
+        order,
+        setIdDelPedido,
+        idDelPedido,
       }}
     >
       {children}

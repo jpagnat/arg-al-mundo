@@ -1,0 +1,67 @@
+.container-checkOut {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .container-checkOut-hijo {
+        margin: 15px;
+        border-right: 1px solid #000;
+        padding-right: 2rem;
+        height: 18rem;
+    }
+}
+
+.container-itemCompra {
+    p {
+        border-bottom: 1px solid #000;
+        width: max-content;
+        font-size: 1.5rem;
+    }
+}
+
+.cantidad-cart {
+    font-size: 1.5rem;
+}
+
+.total-abonar {
+    font-size: 1.5em;
+
+    span {
+        font-weight: bold;
+    }
+}
+
+.medios-pago {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    label {
+        margin-top: 5px;
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+.btn-finalizar {
+    font-size: 1.2rem;
+    background-color: #fff;
+    border-color: #fff;
+    padding: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.title-checkout {
+    text-align: center;
+
+    h1 {
+        font-size: 3rem;
+    }
+}

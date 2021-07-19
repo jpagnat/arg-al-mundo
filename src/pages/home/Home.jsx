@@ -2,7 +2,9 @@ import "./Home.scss";
 import { NavBar } from "../../components/NavBar/navBar";
 import { ItemListContainer } from "..//ItemListContainer/itemListContainer";
 import { ItemDetailContainer } from "../ItemDetailContainer/itemDetailContainer";
+import { FinalizarCompra } from "../../components/FinalizarCompra/finalizarCompra";
 import { Cart } from "../../components/Cart/cart";
+import { CheckOut } from "../../components/CheckOut/checkOut";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export const Home = () => {
@@ -21,6 +23,12 @@ export const Home = () => {
         </Route>
         <Route exact path="/cart">
           <Cart />
+        </Route>
+        <Route exact path="/finalizar-compra">
+          <FinalizarCompra />
+        </Route>
+        <Route exact path="/checkout">
+          <CheckOut />
         </Route>
       </Switch>
     </Router>
