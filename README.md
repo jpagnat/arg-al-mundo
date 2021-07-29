@@ -1,3 +1,9 @@
+E-commerce de productos Argentinos creado como proyecto final del curso React de CoderHouse
+
+Tienda / Filtros por ID/ Cart / Checkout
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
