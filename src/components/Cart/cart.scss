@@ -1,5 +1,6 @@
 .cart-container {
-
+    height: 100vh;
+    background-color: #DD72A6;
 
     .cart {
         display: flex;
@@ -18,6 +19,11 @@
                 li {
                     list-style: none;
                     font-size: 1.5rem;
+
+                    .btn-cross {
+                        background-color: transparent;
+                        border: none;
+                    }
                 }
             }
 
@@ -25,6 +31,7 @@
                 font-size: 1.5rem;
                 font-weight: bold;
                 padding-left: 30px;
+                font-family: 'Montserrat', sans-serif;
             }
 
 
@@ -38,17 +45,20 @@
         justify-content: center;
         align-items: center;
 
+
         .totals-count {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+
 
             .total-item {
                 display: flex;
                 flex-direction: row;
-                margin-top: -4rem;
+                margin: 0 20px;
 
                 h6 {
                     font-size: 1.5rem;
+                    color: #603F8B;
                 }
 
                 p {
@@ -63,11 +73,13 @@
     .total-buttons {
         button {
             font-size: 1.5rem;
-            padding: 10px;
+            border: none;
+            padding: 8px;
+            background-color: #B4FEE7;
+            border-radius: 5%;
+            cursor: pointer;
+            margin-top: 10px;
             margin-bottom: 10px;
-            border-color: #fff;
-            background-color: #fff;
-
         }
     }
 }
@@ -77,6 +89,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: #D686AF;
 
     p {
         font-size: 2rem;
@@ -85,8 +99,8 @@
     .link-home {
         font-size: 2rem;
         text-decoration: none;
-        color: #000;
-        background-color: #ffff;
+        color: #603F8B;
+        background-color: #B4FEE7;
         padding: 5px;
     }
 }
@@ -94,6 +108,9 @@
 .title-checkout {
     text-align: center;
     font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 2rem;
+    color: #603F8B;
 }
 
 .checkout-form {
@@ -106,26 +123,28 @@
 
     label {
         margin: 1rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
 
         input {
             margin-left: 50px;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
     }
 
     .finalizar-compra {
         font-size: 1.5rem;
-        margin: 20px;
-        background-color: #FFFFFF;
-        padding: 8px;
-        cursor: pointer;
         text-decoration: none;
-        color: #000;
+        width: 100%;
+        color: #603F8B;
+        background-color: #B4FEE7;
+        padding: 5px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
     }
+}
 
-    .finalizar-compra:hover {
-        background-color: #B7D3F2;
+.finalizar-compra:hover {
+    background-color: #B7D3F2;
 
-    }
 }

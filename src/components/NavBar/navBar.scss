@@ -1,20 +1,22 @@
 .navBar {
-    background-color: #fff;
+    background-color: #B4FEE7;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 
+
     .navBarItem {
         display: inline-block;
         margin: 0 10px;
-        color: #0b0a07;
+        color: #603F8B;
         border-bottom: 2px solid transparent;
         font-size: 25px;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .navBarItem:hover {
-        border-bottom: 2px solid #0b0a07;
+        border-bottom: 2px solid #603F8B;
 
     }
 

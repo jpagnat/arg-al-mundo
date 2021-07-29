@@ -12,7 +12,7 @@ export const Item = ({ item }) => {
         <div className="item-description-container">
           <div className="item-description">
             <h3 className="titleItem">{item.title}</h3>
-            <p className="priceItem">{item.price}</p>
+            <p className="priceItem">$ {item.price}</p>
           </div>
         </div>
       </div>

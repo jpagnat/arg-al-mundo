@@ -35,7 +35,7 @@ export const ItemListContainer = () => {
   }, [id]);
 
   return (
-    <div>
+    <div className="itemListContainer">
       <ItemList items={items} />
     </div>
   );

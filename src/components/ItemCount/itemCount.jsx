@@ -39,11 +39,11 @@ export const ItemCount = ({ onAdd, state, isInCart, stockItem }) => {
       >
         <div>
           <button className="btnCount" onClick={disminuirCantidad}>
-            -
+          <i class="fas fa-minus"></i>
           </button>
           <span>{itemCount}</span>
           <button className="btnCount" onClick={aumentarCantidad}>
-            +
+          <i class="fas fa-plus"></i>
           </button>
         </div>
         <button onClick={handleClick} className="addCart">

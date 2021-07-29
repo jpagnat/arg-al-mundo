@@ -1,67 +1,41 @@
-.container-checkOut {
+.container-resumen {
+    height: 100vh;
+    background-color: #DD72A6;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .container-checkOut-hijo {
-        margin: 15px;
-        border-right: 1px solid #000;
-        padding-right: 2rem;
-        height: 18rem;
+    .resume-compra {
+        font-family: 'Montserrat', sans-serif;
+        color: #603F8B;
     }
-}
 
-.container-itemCompra {
-    p {
-        border-bottom: 1px solid #000;
-        width: max-content;
+    .items-resumen {
+        font-family: 'Montserrat', sans-serif;
         font-size: 1.5rem;
+        margin-left: 15px;
     }
-}
 
-.cantidad-cart {
-    font-size: 1.5rem;
-}
+    .total-abonar-container {
+        border-top: 1px solid #fff;
+        width: 400px;
+        margin-left: 15px;
 
-.total-abonar {
-    font-size: 1.5em;
+        .total-abonar {
 
-    span {
-        font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+
+        }
     }
-}
 
-.medios-pago {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    label {
-        margin-top: 5px;
+    .btn-finalizar {
+        text-decoration: none;
+        color: #603F8B;
+        background-color: #B4FEE7;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
         font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1.5rem;
-    }
-}
-
-.btn-finalizar {
-    font-size: 1.2rem;
-    background-color: #fff;
-    border-color: #fff;
-    padding: 5px;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #000;
-}
-
-.title-checkout {
-    text-align: center;
-
-    h1 {
-        font-size: 3rem;
     }
 }

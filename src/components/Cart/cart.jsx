@@ -81,12 +81,12 @@ export const Cart = () => {
                   {cart.map((item) => {
                     return (
                       <li>
-                        <button
+                        <button className="btn-cross"
                           onClick={(e) => {
                             removeItem(item.item.id);
                           }}
                         >
-                          X
+                          <i class="fas fa-times"></i>
                         </button>
                       </li>
                     );
@@ -106,6 +106,7 @@ export const Cart = () => {
                   <p>$ {totalPrice}</p>
                 </div>
               </div>
+
               <div className="total-buttons">
                 <button
                   onClick={mostrarFormOrder}
@@ -125,7 +126,7 @@ export const Cart = () => {
             </h2>
             <div className="checkout-form">
               <label>
-                Ingrese su nombre:
+                Nombre:
                 <input
                   value={userInfo.name}
                   onChange={saveUser}
@@ -134,7 +135,7 @@ export const Cart = () => {
                 ></input>
               </label>
               <label>
-                Ingrese su apellido:
+                Apellido:
                 <input
                   value={userInfo.lastname}
                   onChange={saveUser}
@@ -143,7 +144,7 @@ export const Cart = () => {
                 ></input>
               </label>
               <label>
-                Ingrese su correo electronico:
+                Correo electronico:
                 <input
                   value={userInfo.email}
                   onChange={saveUser}
@@ -152,7 +153,7 @@ export const Cart = () => {
                 ></input>
               </label>
               <label>
-                Ingrese un telefono de contacto:
+                Telefono de contacto:
                 <input
                   value={userInfo.phone}
                   onChange={saveUser}

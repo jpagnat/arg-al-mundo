@@ -34,8 +34,8 @@ export const ItemDetailContainer = () => {
   }, [id]);
 
   return (
-    <div>
-      {item === undefined ? <p>Cargando..</p> : <ItemDetail item={item} />}
+    <div className="item-detail">
+      {item === undefined ? <div className="loader"><p>Cargando..</p></div> : <ItemDetail  item={item} />}
     </div>
   );
 };

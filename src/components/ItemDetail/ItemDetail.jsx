@@ -17,17 +17,23 @@ export const ItemDetail = ({ item }) => {
   };
 
   return (
-    <div>
+    <div className="container">
       <div className="item-detail-container">
         <img className="item-detail-img" src={pictureUrl} alt="" />
         <div className="item-detail-description">
           <h3 className="item-detail-title">{title}</h3>
-          <p className="item-detail-price">{price}</p>
+          <p className="item-detail-price">$ {price}</p>
           <div className="item-detail-count">
             <ItemCount onAdd={onAdd} state={state} stockItem={stock} />
           </div>
         </div>
+
+        <div className="item-detail-p">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ullam architecto, sed ut nesciunt eaque iure ea porro assumenda corrupti error molestias itaque similique dolores, repellendus maiores, autem nisi mollitia.</p>
       </div>
+      </div>
+
+      
     </div>
   );
 };

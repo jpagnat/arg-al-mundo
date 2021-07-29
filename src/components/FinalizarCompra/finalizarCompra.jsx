@@ -30,53 +30,44 @@ export const FinalizarCompra = () => {
   }, [buyer]);
 
   return (
-    <Fragment>
-      <div className="title-checkout">
-        <h1>Resumen de compra</h1>
-        <p className="cantidad-cart">
-          Genial! Tenes {countCart} productos en el carrito
-        </p>
-      </div>
-      <div className="container-checkOut">
-        <div className="container-checkOut-hijo">
-          <div className="container-compra">
-            <div className="container-ItemsCompra">
-              {cart.map((i) => {
-                return (
-                  <div className="container-itemCompra" key={i.item.id}>
+    <div className="container-resumen">
+
+    <div>
+        <div className="resume-compra">
+          <h1>Resumen de compra</h1>
+
+          <p className="cantidad-cart">
+            Genial! Tenes {countCart} productos en el carrito
+          </p>
+        </div>
+
+        <div>
+          {cart.map((i) => {
+            return (
+                  <div className="items-resumen" key={i.item.id}>
                     <p>
+                    <i class="fas fa-angle-double-right">  </i> 
                       {i.item.title} - x{i.quantity} unidades
                     </p>
                   </div>
-                );
+                  );
               })}
-            </div>
-            <p className="total-abonar">
-              Total a abonar: <span>$ {totalPrice} </span>
-            </p>
-          </div>
         </div>
+      </div>
 
-        <div className="medios-pago container-checkOut-hijo">
-          <p>Selecciona el medio de pago:</p>
-          <label>
-            MercadoPago
-            <input type="radio"></input>
-          </label>
-          <label>
-            Tarjeta de Credito
-            <input type="radio"></input>
-          </label>
-          <label>
-            Efectivo
-            <input type="radio"></input>
-          </label>
+      <div class="total-abonar-container">
+          <p className="total-abonar">
+              Total a abonar: <span>$ {totalPrice} </span>
+          </p>
+      </div>
+          
+
 
           <Link to="checkout" class="btn-finalizar">
             Confirmar pedido
           </Link>
-        </div>
-      </div>
-    </Fragment>
+
+      
+    </div>
   );
 };

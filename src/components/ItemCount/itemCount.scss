@@ -1,31 +1,28 @@
 .btnContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
+
 
     .btnCount {
-        font-size: 1.5rem;
-        padding: 8px;
-        width: 35px;
-        margin: 10px;
-        border-radius: 50%;
-        border-color: #fff;
+        font-size: 1rem;
+        padding: 10px;
+        border-radius: 20%;
+        background-color: transparent;
+        border: none;
 
     }
 
     span {
         font-size: 1.5rem;
+        margin: 0 10px;
     }
 
     .addCart {
-        font-size: 2rem;
-        border: 0.1px solid #000;
+        font-size: 1.5rem;
+        border: none;
         padding: 8px;
-        background-color: #B7D3F2;
-        border-radius: 15%;
+        background-color: #DD72A6;
+        border-radius: 10%;
         cursor: pointer;
+
     }
 }
 
@@ -34,11 +31,11 @@
 
     .btnFinalizarCompra {
         display: none;
-        font-size: 2rem;
-        border: 0.1px solid #000;
+        font-size: 1.5rem;
+        border: none;
         padding: 8px;
-        background-color: #B7D3F2;
-        border-radius: 15%;
+        background-color: #DD72A6;
+        border-radius: 10%;
         cursor: pointer;
     }
 }

@@ -1,40 +1,59 @@
-.item-detail-container {
-    width: 50rem;
-    display: grid;
-    grid-template-areas:
-        "img description description"
-        "img description description"
-        "img description description";
-
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-
-    border: 0.5px solid #000;
-    margin: 4rem auto 4rem auto;
-    background-color: #fff;
+.container {
+    padding-top: 50px;
 
 
-    .item-detail-img {
-        border-right: 1px solid #000;
-        width: 25rem;
-    }
+    .item-detail-container {
+        width: 50rem;
+        display: grid;
+        grid-template-areas:
+            "img description description"
+            "img description description"
+            "img description description"
+            "ppp ppp ppp";
 
-    .item-detail-description {
-        grid-area: description;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+
+
         margin: 0 auto;
 
-        .item-detail-title {
-            font-size: 2rem;
-            width: 100%;
+        box-shadow: 5px 10px 30px -3px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 5px 10px 30px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 5px 10px 30px -3px rgba(0, 0, 0, 0.75);
+
+
+
+        .item-detail-img {
+            width: 25rem;
         }
 
-        .item-detail-price {
+        .item-detail-p {
+            grid-area: ppp;
+            padding: 8px;
+            background-color: #fff;
+        }
+
+        .item-detail-description {
+            grid-area: description;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 0 auto;
+            color: #603F8B;
+            background-color: #ffff;
             width: 100%;
-            font-size: 2rem;
+
+
+            .item-detail-title {
+                font-size: 2rem;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .item-detail-price {
+                width: 100%;
+                font-size: 2rem;
+            }
         }
     }
 }
