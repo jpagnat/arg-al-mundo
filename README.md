@@ -2,7 +2,7 @@ E-commerce de productos Argentinos creado como proyecto final del curso React de
 
 Tienda / Filtros por ID/ Cart / Checkout
 
-![](http://i.imgur.com/OUkLi.gif)
+
 ![](./gift.gif)
 
 
