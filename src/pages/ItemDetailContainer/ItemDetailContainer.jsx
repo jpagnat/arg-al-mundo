@@ -3,6 +3,8 @@ import "./itemDetailContainer.scss";
 import { ItemDetail } from "../../components/ItemDetail/itemDetail";
 import { useParams } from "react-router-dom";
 import { getFireStore } from "../../firebase/firebase";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+import Loader from "react-loader-spinner";
 
 export const ItemDetailContainer = () => {
   const { id } = useParams();
@@ -16,7 +18,8 @@ export const ItemDetailContainer = () => {
     const productid = id;
     const item = itemCollection.doc(productid);
 
-    item
+    setTimeout(() =>{
+      item
       .get()
       .then((doc) => {
         if (!doc.exists) {
@@ -31,11 +34,23 @@ export const ItemDetailContainer = () => {
       .finally(() => {
         setLoading(false);
       });
+
+
+    }, 1000)
+    
   }, [id]);
 
   return (
     <div className="item-detail">
-      {item === undefined ? <div className="loader"><p>Cargando..</p></div> : <ItemDetail  item={item} />}
+      {item === undefined ? 
+      <Loader
+      className="loader"
+        type="ThreeDots"
+        color="#603F8B"
+        height={100}
+        width={100}
+        /> :
+        <ItemDetail  item={item} />}
     </div>
   );
 };

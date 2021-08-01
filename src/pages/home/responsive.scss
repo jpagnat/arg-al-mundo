@@ -1,0 +1,40 @@
+@media screen and (max-width:768px) {
+    .carousel-mobile {
+        display: none;
+    }
+
+
+
+}
+
+@media screen and (max-width:400px) {
+    .cart {
+
+
+        .cart-item {
+
+            margin: 0px;
+
+            ul {
+                li {
+                    list-style: none;
+                    font-size: 10rem;
+                }
+
+                .btn-cross {
+                    background-color: red;
+                }
+            }
+        }
+
+        .cart-item-title {
+            font-size: 10rem;
+            padding-left: 0px;
+        }
+
+
+    }
+
+
+
+}

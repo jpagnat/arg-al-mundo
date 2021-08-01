@@ -1,31 +1,38 @@
-.navBar {
+.navbar {
     background-color: #B4FEE7;
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+}
+
+.items-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+}
 
+.nav-link {
+    color: #603F8B !important;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
 
-    .navBarItem {
-        display: inline-block;
-        margin: 0 10px;
-        color: #603F8B;
-        border-bottom: 2px solid transparent;
-        font-size: 25px;
-        font-family: 'Montserrat', sans-serif;
-    }
+.nav-link:hover {
+    border-bottom: 2px solid #603F8B;
+}
 
-    .navBarItem:hover {
-        border-bottom: 2px solid #603F8B;
+.cart-widget {
+    margin-right: 20px;
+}
 
-    }
+.navbar-toggler {
+    .navbar-toggler-icon {
+        color: #DD72A6;
+        font-size: 2rem;
 
-    .logo {
-        width: 5em;
-        height: 5em;
-    }
-
-    .cart {
-        margin-right: 30px;
     }
 }

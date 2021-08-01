@@ -1,6 +1,6 @@
 .checkout-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     height: 100vh;
@@ -9,11 +9,14 @@
 
     h1 {
         color: #603F8B;
+        padding-top: 20px;
+        padding-left: 20px;
     }
 
 
     p {
         font-size: 1.5rem;
+        padding: 20px;
 
 
 

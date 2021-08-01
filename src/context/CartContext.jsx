@@ -8,8 +8,10 @@ export const CartProvider = ({ children }) => {
   const [totalPrice, setTotalPrice] = useState();
   const [buyer, setBuyer] = useState();
   const [idDelPedido, setIdDelPedido] = useState();
-
   const order = { buyer, cart, countCart, totalPrice };
+
+
+
 
   //Agregar cierta cantidad de un item al carrito
   const addItem = (item, quantity) => {
@@ -34,6 +36,7 @@ export const CartProvider = ({ children }) => {
     setCart([]);
     setCountCart(0);
     setTotalPrice(0);
+    localStorage.setItem('cart', JSON.stringify())
     console.log("Carrito vaciado");
   };
 
@@ -45,6 +48,7 @@ export const CartProvider = ({ children }) => {
   //Actualizar el carrito
   const updateCart = (obj) => {
     setCart([...cart, obj]);
+    localStorage.setItem('cart', JSON.stringify([...cart, obj]))
   };
 
   //Contador del carrito

@@ -16,6 +16,7 @@
     i {
         text-decoration: none;
         padding: 10px;
+        position: relative;
     }
 
     span {
@@ -25,5 +26,9 @@
         font-size: 20px;
         right: 1.5rem;
         top: 0.5rem;
+
+        @media (max-width: 988px) {
+            top: 8rem;
+        }
     }
 }

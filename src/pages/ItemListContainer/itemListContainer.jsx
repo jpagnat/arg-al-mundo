@@ -10,28 +10,33 @@ export const ItemListContainer = () => {
   const [loading, setLoading] = useState();
 
   useEffect(() => {
+    
     setLoading(true);
     const db = getFireStore();
     const itemCollection = db.collection("products");
     const filterItems = id
       ? itemCollection.where("categoryId", "==", id)
       : itemCollection;
-    filterItems
-      .get()
-      .then((querySnapshot) => {
-        if (querySnapshot.size === 0) {
-          console.log("No results!");
-        }
-        setItems(
-          querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
-        );
-      })
-      .catch((error) => {
-        console.log("Error");
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+
+      setTimeout(() =>{
+        filterItems
+        .get()
+        .then((querySnapshot) => {
+          if (querySnapshot.size === 0) {
+            console.log("No results!");
+          }
+          setItems(
+            querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
+          );
+        })
+        .catch((error) => {
+          console.log("Error");
+        })
+        .finally(() => {
+          setLoading(false);
+        });
+      }, 500)
+    
   }, [id]);
 
   return (

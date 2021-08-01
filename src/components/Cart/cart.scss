@@ -1,150 +1,106 @@
 .cart-container {
     height: 100vh;
     background-color: #DD72A6;
+    font-family: 'Montserrat', sans-serif;
 
-    .cart {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-        .cart-item {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 10px;
-
-            ul {
-                li {
-                    list-style: none;
-                    font-size: 1.5rem;
-
-                    .btn-cross {
-                        background-color: transparent;
-                        border: none;
-                    }
-                }
-            }
-
-            .cart-item-title {
-                font-size: 1.5rem;
-                font-weight: bold;
-                padding-left: 30px;
-                font-family: 'Montserrat', sans-serif;
-            }
-
-
-
-        }
-    }
-
-    .totals-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-
-        .totals-count {
-            display: flex;
-            flex-direction: row;
-
-
-            .total-item {
-                display: flex;
-                flex-direction: row;
-                margin: 0 20px;
-
-                h6 {
-                    font-size: 1.5rem;
-                    color: #603F8B;
-                }
-
-                p {
-                    align-self: center;
-                    margin-left: 15px;
-                    font-size: 1.5rem;
-                }
-            }
-        }
-    }
-
-    .total-buttons {
-        button {
-            font-size: 1.5rem;
-            border: none;
-            padding: 8px;
-            background-color: #B4FEE7;
-            border-radius: 5%;
-            cursor: pointer;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-    }
 }
 
-.no-products {
+.btn-cross {
+    background-color: transparent;
+    border: none;
+}
+
+.cart-totales {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-cross:hover {
+    color: red;
+}
+
+.btn-carrito {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #D686AF;
 
-    p {
-        font-size: 2rem;
-    }
-
-    .link-home {
-        font-size: 2rem;
-        text-decoration: none;
-        color: #603F8B;
+    button {
+        font-size: 1.5rem;
+        width: max-content;
+        margin-top: 20px;
         background-color: #B4FEE7;
-        padding: 5px;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
     }
 }
 
 .title-checkout {
     text-align: center;
-    font-size: 2.5rem;
-    font-family: 'Montserrat', sans-serif;
-    padding-top: 2rem;
-    color: #603F8B;
+    padding-top: 20px;
 }
 
 .checkout-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: fit-content;
-    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media(max-width: 768px) {}
+
 
     label {
-        margin: 1rem;
         font-size: 1.5rem;
-        font-family: 'Montserrat', sans-serif;
+
+        @media(max-width: 768px) {
+            font-size: 1.2rem;
+        }
+
+        #email {
+            margin-left: 45px;
+        }
+
 
         input {
-            margin-left: 50px;
-            font-size: 1.2rem;
+            font-size: 1rem;
+            margin-left: 20px;
+
+            @media(max-width: 768px) {
+                font-size: 0.8rem;
+            }
         }
     }
 
     .finalizar-compra {
-        font-size: 1.5rem;
         text-decoration: none;
-        width: 100%;
-        color: #603F8B;
         background-color: #B4FEE7;
-        padding: 5px;
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
+        padding: 15px;
+        font-size: 1.5rem;
+        margin-top: 20px;
+        color: #603F8B;
     }
 }
 
-.finalizar-compra:hover {
-    background-color: #B7D3F2;
 
+.no-products {
+    background-color: #DD72A6;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .link-home {
+        text-decoration: none;
+        background-color: #B4FEE7;
+        padding: 15px;
+        font-size: 1.5rem;
+        margin-top: 20px;
+        color: #603F8B;
+    }
 }

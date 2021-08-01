@@ -6,3 +6,17 @@
         height: 100%;
     }
 }
+
+.banner-mobile {
+    display: none;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+
+    img {
+        width: 100%;
+    }
+
+
+}

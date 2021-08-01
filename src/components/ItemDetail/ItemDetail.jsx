@@ -7,7 +7,7 @@ export const ItemDetail = ({ item }) => {
   const [state, setState] = useState(false);
 
   const { addItem } = useContext(CartContext);
-  const { pictureUrl, title, price, stock } = item[0];
+  const { pictureUrl, title, price, stock, desc } = item[0];
 
   const onAdd = (itemCount) => {
     setState(true);
@@ -29,11 +29,9 @@ export const ItemDetail = ({ item }) => {
         </div>
 
         <div className="item-detail-p">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ullam architecto, sed ut nesciunt eaque iure ea porro assumenda corrupti error molestias itaque similique dolores, repellendus maiores, autem nisi mollitia.</p>
+          <p>{desc}</p>
+        </div>
       </div>
-      </div>
-
-      
     </div>
   );
 };
