@@ -2,8 +2,26 @@
     height: 100vh;
     background-color: #DD72A6;
     font-family: 'Montserrat', sans-serif;
+}
+
+.cart {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
+
+.table {
+    background-color: #B4FEE7;
+    box-shadow: 5px 10px 30px -3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 5px 10px 30px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 10px 30px -3px rgba(0, 0, 0, 0.75);
+
+    text-align: center;
+}
+
+
 
 .btn-cross {
     background-color: transparent;

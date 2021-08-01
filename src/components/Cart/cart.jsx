@@ -68,7 +68,7 @@ export const Cart = () => {
                     );
                   })}
 
-                  <tr className="cart-totales">
+                  <tr className="cart-totales table-danger">
                     <th scope="row">Totales</th>
                     <td></td>
                     <td>{countCart}</td>
