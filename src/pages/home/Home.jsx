@@ -15,7 +15,7 @@ export const Home = () => {
     <Router>
       <NavBar />
       <Switch>
-        <Route exact path="*">
+        <Route exact path="/arg-al-mundo">
           <Banner />
           <ItemListContainer />
         </Route>
