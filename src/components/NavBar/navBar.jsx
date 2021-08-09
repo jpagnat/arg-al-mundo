@@ -8,7 +8,7 @@ export const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
-        <Link to="/">
+        <Link to="/arg-al-mundo">
           <img className="logo" src={logo} alt="" />
         </Link>
 

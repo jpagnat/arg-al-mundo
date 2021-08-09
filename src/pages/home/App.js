@@ -12,7 +12,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export const App = () => {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <NavBar />
       <Switch>
         <Route exact path="/arg-al-mundo">

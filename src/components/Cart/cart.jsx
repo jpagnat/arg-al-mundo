@@ -30,7 +30,7 @@ export const Cart = () => {
       {cart === undefined || cart.length === 0 ? (
         <div className="no-products">
           <p>Ops! No hay productos en el carrito</p>
-          <Link to="/" className="link-home">
+          <Link to="/arg-al-mundo" className="link-home">
             Ir a la tienda
           </Link>
         </div>

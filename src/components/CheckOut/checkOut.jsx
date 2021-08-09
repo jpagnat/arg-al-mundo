@@ -17,7 +17,7 @@ export const CheckOut = () => {
         Te enviaremos un mail a tu correo electronico para abonar y finalizar la
         compra
       </p>
-      <Link to="/">
+      <Link to="/arg-al-mundo">
         <button class="btn-checkout" onClick={clearCart}>
           Volver a la tienda
         </button>
