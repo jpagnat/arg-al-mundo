@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/arg-al-mundo/static/css/main.9ad210c9.chunk.css",
-    "main.js": "/arg-al-mundo/static/js/main.be9ac970.chunk.js",
-    "main.js.map": "/arg-al-mundo/static/js/main.be9ac970.chunk.js.map",
+    "main.js": "/arg-al-mundo/static/js/main.e9fd7f57.chunk.js",
+    "main.js.map": "/arg-al-mundo/static/js/main.e9fd7f57.chunk.js.map",
     "runtime-main.js": "/arg-al-mundo/static/js/runtime-main.7db4c30b.js",
     "runtime-main.js.map": "/arg-al-mundo/static/js/runtime-main.7db4c30b.js.map",
     "static/css/2.5059df62.chunk.css": "/arg-al-mundo/static/css/2.5059df62.chunk.css",
@@ -23,6 +23,6 @@
     "static/css/2.5059df62.chunk.css",
     "static/js/2.218aea27.chunk.js",
     "static/css/main.9ad210c9.chunk.css",
-    "static/js/main.be9ac970.chunk.js"
+    "static/js/main.e9fd7f57.chunk.js"
   ]
 }
