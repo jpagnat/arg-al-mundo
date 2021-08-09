@@ -6,16 +6,16 @@ import { FinalizarCompra } from "../../components/FinalizarCompra/finalizarCompr
 import { Cart } from "../../components/Cart/cart";
 import { CheckOut } from "../../components/CheckOut/checkOut";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import {Banner} from "../../components/Banner/banner";
-import {Footer} from "../../components/Footer/footer";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Banner } from "../../components/Banner/banner";
+import { Footer } from "../../components/Footer/footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Home = () => {
   return (
     <Router>
       <NavBar />
       <Switch>
-      <Route exact path="/">
+        <Route exact path="*">
           <Banner />
           <ItemListContainer />
         </Route>
@@ -35,7 +35,7 @@ export const Home = () => {
           <CheckOut />
         </Route>
       </Switch>
-      <Footer/>
+      <Footer />
     </Router>
   );
 };
