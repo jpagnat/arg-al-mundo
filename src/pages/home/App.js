@@ -1,6 +1,6 @@
-import "./Home.scss";
+import "./App.scss";
 import { NavBar } from "../../components/NavBar/navBar";
-import { ItemListContainer } from "..//ItemListContainer/itemListContainer";
+import { ItemListContainer } from "../ItemListContainer/itemListContainer";
 import { ItemDetailContainer } from "../ItemDetailContainer/itemDetailContainer";
 import { FinalizarCompra } from "../../components/FinalizarCompra/finalizarCompra";
 import { Cart } from "../../components/Cart/cart";
@@ -10,7 +10,7 @@ import { Banner } from "../../components/Banner/banner";
 import { Footer } from "../../components/Footer/footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export const Home = () => {
+export const App = () => {
   return (
     <Router>
       <NavBar />
