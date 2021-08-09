@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/arg-al-mundo/static/css/main.91aa120d.chunk.css",
-    "main.js": "/arg-al-mundo/static/js/main.7943e322.chunk.js",
-    "main.js.map": "/arg-al-mundo/static/js/main.7943e322.chunk.js.map",
+    "main.css": "/arg-al-mundo/static/css/main.9ad210c9.chunk.css",
+    "main.js": "/arg-al-mundo/static/js/main.be9ac970.chunk.js",
+    "main.js.map": "/arg-al-mundo/static/js/main.be9ac970.chunk.js.map",
     "runtime-main.js": "/arg-al-mundo/static/js/runtime-main.7db4c30b.js",
     "runtime-main.js.map": "/arg-al-mundo/static/js/runtime-main.7db4c30b.js.map",
     "static/css/2.5059df62.chunk.css": "/arg-al-mundo/static/css/2.5059df62.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.218aea27.chunk.js.map": "/arg-al-mundo/static/js/2.218aea27.chunk.js.map",
     "index.html": "/arg-al-mundo/index.html",
     "static/css/2.5059df62.chunk.css.map": "/arg-al-mundo/static/css/2.5059df62.chunk.css.map",
-    "static/css/main.91aa120d.chunk.css.map": "/arg-al-mundo/static/css/main.91aa120d.chunk.css.map",
+    "static/css/main.9ad210c9.chunk.css.map": "/arg-al-mundo/static/css/main.9ad210c9.chunk.css.map",
     "static/js/2.218aea27.chunk.js.LICENSE.txt": "/arg-al-mundo/static/js/2.218aea27.chunk.js.LICENSE.txt",
     "static/media/brand1.e804b116.png": "/arg-al-mundo/static/media/brand1.e804b116.png",
     "static/media/brand2.b502ecd6.png": "/arg-al-mundo/static/media/brand2.b502ecd6.png",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.7db4c30b.js",
     "static/css/2.5059df62.chunk.css",
     "static/js/2.218aea27.chunk.js",
-    "static/css/main.91aa120d.chunk.css",
-    "static/js/main.7943e322.chunk.js"
+    "static/css/main.9ad210c9.chunk.css",
+    "static/js/main.be9ac970.chunk.js"
   ]
 }
